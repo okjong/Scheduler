@@ -42,7 +42,7 @@ public class ListFragmnet extends Fragment {
 
         });
 
-        //fragment는 context가 없음.
+        //fragment는 context가 없음. getActivity() 사용
 
     }
 }
