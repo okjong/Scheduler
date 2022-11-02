@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="city">
+        <item>서울특별시</item>
+        <item>경기도</item>
+        <item>충북</item>
+        <item>충남</item>
+        <item>전북</item>
+        <item>전남</item>
+        <item>경북</item>
+        <item>경남</item>
+        <item>강원도</item>
+    </string-array>
+    <string-array name="address">
+        <item>광명시</item>
+        <item>시흥시</item>
+        <item>구리시</item>
+        <item>남양주시</item>
+        <item>성남시</item>
+        <item>하남시</item>
+    </string-array>
+    <string-array name="hospital">
+        <item>삼성내과</item>
+        <item>현대내과</item>
+        <item>연세내과</item>
+        <item>이호진내과</item>
+        <item>진내과</item>
+        <item>명내과</item>
+        <item>오내과</item>
+        <item>왕내과</item>
+    </string-array>
+
+
+</resources>
