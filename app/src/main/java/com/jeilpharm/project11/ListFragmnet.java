@@ -26,7 +26,7 @@ public class ListFragmnet extends Fragment {
     TextView tvTitle;
     TextView tvList;
     Button btnSet;
-    Context context;
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class ListFragmnet extends Fragment {
         btnSet=view.findViewById(R.id.btn_set);
 
         btnSet.setOnClickListener(view1 -> {
-            Intent intent= new Intent(context,List2Fragment.class);
+            Intent intent= new Intent(getActivity(),List2Fragment.class);
             startActivity(intent);
         });
 
