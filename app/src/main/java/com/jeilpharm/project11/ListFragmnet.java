@@ -37,7 +37,8 @@ public class ListFragmnet extends Fragment {
         btnSet=view.findViewById(R.id.btn_set);
 
         btnSet.setOnClickListener(view1 -> {
-
+            Intent intent= new Intent(getActivity(),List2Fragment.class);
+            startActivity(intent);
         });
 
         //fragment는 context가 없음. getActivity() 사용
