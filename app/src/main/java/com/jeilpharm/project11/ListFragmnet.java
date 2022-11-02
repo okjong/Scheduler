@@ -41,5 +41,7 @@ public class ListFragmnet extends Fragment {
             startActivity(intent);
         });
 
+        //fragment는 context가 없음.
+
     }
 }
