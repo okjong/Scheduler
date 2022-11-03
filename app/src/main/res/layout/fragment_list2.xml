@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".List2Fragment">
 
     <TextView
@@ -13,7 +14,8 @@
         android:text="거래처 목록"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="30sp"
+        android:fontFamily="@font/kmi_bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
     <Spinner
@@ -38,10 +40,20 @@
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/spinner_address"
         android:entries="@array/hospital"/>
+
     <TextView
         android:id="@+id/tv_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/spinner_location"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_tv_list"/>
+
+    <Button
+        android:id="@+id/btn_save_list2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/teal_200"/>
 </RelativeLayout>
