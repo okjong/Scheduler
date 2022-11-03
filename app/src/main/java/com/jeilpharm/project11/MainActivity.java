@@ -7,9 +7,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationBarView;
 import com.jeilpharm.project11.databinding.ActivityMainBinding;
 
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+
 
         fragments.add(new ListFragmnet());
         fragments.add(null);
@@ -64,5 +68,61 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-    }
+    }//oncreate...
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
