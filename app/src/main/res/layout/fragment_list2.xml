@@ -41,13 +41,14 @@
         android:layout_toRightOf="@+id/spinner_address"
         android:entries="@array/hospital"/>
 
-    <TextView
-        android:id="@+id/tv_list"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/spinner_address"
+        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/spinner_location"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/shape_tv_list"/>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"/>
 
     <Button
         android:id="@+id/btn_save_list2"
