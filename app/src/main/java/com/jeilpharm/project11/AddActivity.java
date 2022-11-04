@@ -49,7 +49,7 @@ public class AddActivity extends AppCompatActivity {
          bottomSheetDialog.setContentView(R.layout.bs_calendar);
          bottomSheetDialog.show();
 
-        CalendarView calendarView= bottomSheetDialog.findViewById(R.id.calendarView);
+
     }
 
 
