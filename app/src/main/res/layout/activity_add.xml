@@ -29,16 +29,125 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="거래처"
+                android:fontFamily="@font/kmi_bold"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/tv_add_hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A내과"
+                android:fontFamily="@font/kmi_bold"
+                android:textSize="20sp"
+                android:textColor="@color/teal_700"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일정"
+                android:fontFamily="@font/kmi_bold"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20sp"/>
+            <TextView
+                android:id="@+id/tv_add_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2022년11월30일(목) 13:00PM"
+                android:ems="30"
+                android:textSize="20sp"
+                android:fontFamily="@font/kmi_bold"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="알람"
+                android:fontFamily="@font/kmi_bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5분전"
+                android:textSize="20sp"
+                android:fontFamily="@font/kmi_bold"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카테고리"
+                android:textSize="20sp"
+                android:fontFamily="@font/kmi_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/tv_add_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="점심식사"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메모"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kmi_bold"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/et_add_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:hint="입력하세요"
+                android:textColor="@color/black"
+                android:layout_marginLeft="2dp"
+                android:padding="16dp"
+                android:layout_marginTop="4dp"/>
+
+            <Button
+                android:id="@+id/btn_add_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장완료"
+                android:backgroundTint="@color/teal_200"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"/>
 
         </LinearLayout>
 
-
-
-
-
-
     </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
 
 
 
