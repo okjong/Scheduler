@@ -21,7 +21,7 @@ public class AddActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("일정 추가");
 
         category=getIntent().getIntExtra("category",0);
-        binding.tvAddDate.setText(date);
+
 
 
 
