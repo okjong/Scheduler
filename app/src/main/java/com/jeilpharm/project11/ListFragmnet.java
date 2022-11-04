@@ -59,10 +59,14 @@ public class ListFragmnet extends Fragment {
 
                         switch (menuItem.getItemId()){
                             case R.id.popup_schedule:
+                                Intent intent= new Intent(getActivity(),ScheduleActivity.class);
                                 break;
                             case R.id.popup_graph:
+                                Intent intent1= new Intent(getActivity(),GraphActivity.class);
                                 break;
                             case R.id.popup_location:
+                                Intent intent2= new Intent(getActivity(),MapActivity2.class);
+                                break;
                         }
 
 
