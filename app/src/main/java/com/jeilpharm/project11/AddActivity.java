@@ -1,10 +1,8 @@
 package com.jeilpharm.project11;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
-import android.renderscript.ScriptGroup;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.jeilpharm.project11.databinding.ActivityAddBinding;
@@ -31,7 +29,7 @@ public class AddActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("일정 추가");
 
         category=getIntent().getIntExtra("category",0);
-        binding.tvAddDate.setText(date);
+        binding.tvAddCategory.setText(categorytitle[category]);
 
 
 
@@ -39,3 +37,59 @@ public class AddActivity extends AppCompatActivity {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
