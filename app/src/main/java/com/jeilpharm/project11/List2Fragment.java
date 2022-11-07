@@ -18,13 +18,6 @@ public class List2Fragment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_list2);
 
-        btn=findViewById(R.id.btn_save_list2);
-        btn.setOnClickListener(view -> {
-            Intent intent= new Intent(this,ListFragmnet.class);
-            startActivity(intent);
-        });
-
-
 
     }
 }
