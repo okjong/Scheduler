@@ -48,9 +48,16 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" /> <!-- kakaoMap 네이트 앱 키 : 카카오개발자 싸이트에서 키 발급받기 -->
+
+        <!-- Google API key 등록 - 구글개발자 사이트에서 API 키 발급 -->
         <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="8e28813fdf60206e51d7f4e1355c3d5f" />
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAYGLaL3iA57IMnfMFroE0TNG8KwMOEsrM" />
+
+        <!--  Play-Services 에 대한 버전정보  -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
