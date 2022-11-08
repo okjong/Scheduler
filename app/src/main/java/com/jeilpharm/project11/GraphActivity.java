@@ -26,24 +26,27 @@ public class GraphActivity extends AppCompatActivity {
         binding= ActivityGraphBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        ArrayList<BarEntry> result= new ArrayList<>();
-        result.add(new BarEntry(1,200));
-        result.add(new BarEntry(2,300));
-        result.add(new BarEntry(3,400));
-        result.add(new BarEntry(4,300));
-        result.add(new BarEntry(5,100));
-        result.add(new BarEntry(6,500));
+       barChart=findViewById(R.id.barchart);
 
-        BarDataSet barDataSet= new BarDataSet(result,"result");
-        barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-        barDataSet.setValueTextColor(Color.BLACK);
-        barDataSet.setValueTextSize(16f);
+       ArrayList<BarEntry> barEntries= new ArrayList<>();
 
-        BarData barData= new BarData(barDataSet);
+       barEntries.add(new BarEntry(1,20));
+       barEntries.add(new BarEntry(2,30));
+       barEntries.add(new BarEntry(3,40));
+       barEntries.add(new BarEntry(4,50));
+       barEntries.add(new BarEntry(5,60));
+       barEntries.add(new BarEntry(6,40));
+       barEntries.add(new BarEntry(7,20));
 
-        barChart.setFitBars(true);
-        barChart.setData(barData);
-        barChart.animateY(2000);
+       BarDataSet barDataSet= new BarDataSet(barEntries,"barEntries");
+       barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
+       barDataSet.setValueTextSize(16f);
+
+       BarData barData= new BarData(barDataSet);
+
+       barChart.invalidate();
+       barChart.setData(barData);
+
 
 
     }
