@@ -61,8 +61,53 @@ public class TodoRecyclerAdapter extends RecyclerView.Adapter<TodoRecyclerAdapte
             rcv_tv_title=itemView.findViewById(R.id.recyclerview_item_tv_title);
             rcv_tv_date=itemView.findViewById(R.id.recyclerview_item_tv_date);
 
+            itemView.setOnClickListener(view -> {
+            });
+
         }
     }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
