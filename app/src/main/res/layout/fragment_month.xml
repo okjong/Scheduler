@@ -11,5 +11,118 @@
         android:layout_height="match_parent"/>
 
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/bs"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_peekHeight="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:elevation="16dp">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:background="#FFFFFF00"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/kmi_bold"
+            android:layout_margin="8dp"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/btn_done">
+
+            <TextView
+                android:id="@+id/tv_bs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삼성병원"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kmi_bold"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예정일"
+                android:textSize="12sp"
+                android:fontFamily="@font/kmi_bold"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/tv_bs_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2022년 11월 01일"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kmi_bold"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="memo"
+                android:textSize="12sp"
+                android:fontFamily="@font/kmi_bold"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:id="@+id/et_bs_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:background="@drawable/bg_bs_memo"
+                android:hint="세부내용"
+                android:fontFamily="@font/kmi_bold"
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:gravity="top"
+                android:textColor="#FF333333"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카테고리"
+                android:textSize="12sp"
+                android:fontFamily="@font/kmi_bold"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/tv_bs_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="점심식사"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kmi_bold"
+                android:padding="4dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

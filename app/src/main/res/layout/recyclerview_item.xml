@@ -1,27 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp">
 
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/Todo_appbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/Todo_toolbar"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/recyclerview_item_tv_hospital"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:titleTextColor="@color/black"
-            app:layout_scrollFlags="scroll"/>
+            android:text="삼성내과"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kmi_bold"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/recyclerview_item_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="점심식사"
+            android:fontFamily="@font/kmi_bold"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:layout_below="@+id/recyclerview_item_tv_hospital"/>
+        <TextView
+            android:id="@+id/recyclerview_item_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022년11월23일 (수)"
+            android:fontFamily="@font/kmi_bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:layout_below="@+id/recyclerview_item_tv_hospital"
+            android:layout_toRightOf="@+id/recyclerview_item_tv_title"/>
+
+    </RelativeLayout>
 
 
 
-    </com.google.android.material.appbar.AppBarLayout>
-
-
-</RelativeLayout>
+</androidx.cardview.widget.CardView>
