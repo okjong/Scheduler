@@ -18,37 +18,31 @@
         android:fontFamily="@font/kmi_bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
-    <Spinner
-        android:id="@+id/spinner_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_title"
-        android:layout_marginTop="20dp"
-        android:entries="@array/city"/>
-    <Spinner
-        android:id="@+id/spinner_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_title"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/spinner_location"
-        android:entries="@array/address"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_title"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/spinner_address"
-        android:entries="@array/hospital"/>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_address"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_title"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:entries="@array/address"/>-->
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_title"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_toRightOf="@+id/spinner_address"-->
+<!--        android:entries="@array/hospital"/>-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/spinner_address"
+        android:layout_below="@+id/tv_title"
         android:orientation="vertical"
         android:padding="8dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     <Button
         android:id="@+id/btn_save_list2"
@@ -57,4 +51,11 @@
         android:text="저장"
         android:layout_alignParentRight="true"
         android:backgroundTint="@color/teal_200"/>
+
+    <Button
+        android:id="@+id/btn_load_list2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6B7E87"
+        android:text="불러오기"/>
 </RelativeLayout>

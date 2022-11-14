@@ -58,10 +58,6 @@ public class ListFragmnet extends Fragment {
                     public boolean onMenuItemClick(MenuItem menuItem) {
 
                         switch (menuItem.getItemId()){
-                            case R.id.popup_schedule:
-                                Intent intent= new Intent(getActivity(),ScheduleActivity.class);
-                                startActivity(intent);
-                                break;
                             case R.id.popup_graph:
                                 Intent intent1= new Intent(getActivity(),GraphActivity.class);
                                 startActivity(intent1);

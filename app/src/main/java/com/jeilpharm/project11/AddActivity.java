@@ -50,13 +50,13 @@ public class AddActivity extends AppCompatActivity {
     }
 
     void clicksave(){
-        SQLiteDatabase db=openOrCreateDatabase("Todo",MODE_PRIVATE,null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS todo(num INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, date TEXT, category INTEGER,note TEXT,isDONE INTEGER)");
+        SQLiteDatabase db=openOrCreateDatabase("Schedule",MODE_PRIVATE,null);
+        db.execSQL("CREATE TABLE IF NOT EXISTS schedule(num INTEGER PRIMARY KEY AUTOINCREMENT, hospital TEXT, date TEXT, category INTEGER,note TEXT)");
 
-        String title=binding.tvAddHospital.getText().toString();
-        String note=binding.etAddMemo.getText().toString();
+        String hospital=binding.tvAddHospital.getText().toString();
+        String memo=binding.etAddMemo.getText().toString();
 
-        db.execSQL("INSERT INTO todo(title,date,note,category,isDONE)VALUES(?,?,?,?,?)", new Object[]{title,note,date,category,0});
+        db.execSQL("INSERT INTO schedule(hospital,date,category,note)VALUES(?,?,?,?)", new Object[]{hospital,date,category,memo,0});
         onBackPressed();
     }
 

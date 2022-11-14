@@ -41,6 +41,7 @@ dependencies {
     //구글맵
     implementation 'com.google.android.gms:play-services-maps:18.0.2'
     implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'com.github.pedroSG94:AutoPermissions:1.0.3'
 
     implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
     implementation 'com.jakewharton.threetenabp:threetenabp:1.1.1'

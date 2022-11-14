@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_recycler_list2_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:text="1"/>
+
+        <TextView
+            android:id="@+id/tv_recycler_list2_sigun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시흥시"
+            android:layout_toRightOf="@+id/tv_recycler_list2_name"
+            android:textSize="20sp"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_recycler_list2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삼성내과"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/tv_recycler_list2_sigun"
+            android:layout_margin="8dp"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
