@@ -22,7 +22,6 @@ public class Intro extends AppCompatActivity {
 
     ActivityIntroBinding binding;
 
-    String profileImage="";
     String name="";
 
     @Override
@@ -39,14 +38,6 @@ public class Intro extends AppCompatActivity {
             finish();
         });
 
-        binding.ivCircle.setOnClickListener(view -> {
-
-            Intent intent= new Intent(Intent.ACTION_PICK);
-            intent.setType("image/*");
-            launcher.launch(intent);
-
-        });
-
         loadData();
 
 
@@ -54,11 +45,9 @@ public class Intro extends AppCompatActivity {
 
     void loadData(){
 
-        SharedPreferences pref=getSharedPreferences("Data", MODE_PRIVATE);
+        SharedPreferences pref=getSharedPreferences("account", MODE_PRIVATE);
 
-        profileImage= pref.getString("profile","");
         name=pref.getString("name","");
-        Glide.with(Intro.this).load(profileImage).into(binding.ivCircle);
         binding.etNicname.setText(name);
 
     }
@@ -68,28 +57,11 @@ public class Intro extends AppCompatActivity {
 
         SharedPreferences pref=getSharedPreferences("account",MODE_PRIVATE);
         SharedPreferences.Editor editor= pref.edit();
-        editor.putString("profile",profileImage);
+
         editor.putString("name",name);
 
         editor.commit();
     }
-
-
-
-    ActivityResultLauncher launcher= registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
-        @Override
-        public void onActivityResult(ActivityResult result) {
-            if (result.getResultCode()!=RESULT_CANCELED){
-                Intent intent= result.getData();
-                Uri uri= intent.getData();
-                Glide.with(Intro.this).load(uri).into(binding.ivCircle);
-
-            }
-
-        }
-    });
-
-
 
 }
 

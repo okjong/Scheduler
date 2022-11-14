@@ -32,13 +32,6 @@
             android:textSize="20sp"
             android:layout_marginTop="16dp"/>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/iv_circle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background"
-            android:layout_above="@+id/et_nicname"
-            android:layout_centerHorizontal="true"/>
         <EditText
             android:id="@+id/et_nicname"
             android:layout_width="wrap_content"

@@ -17,6 +17,7 @@ import com.google.android.material.navigation.NavigationBarView;
 import com.jeilpharm.project11.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         binding.fab.setOnClickListener(v->{
             Intent intent= new Intent(this,AddActivity.class);
@@ -73,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }//oncreate...
-
 
 }
 
